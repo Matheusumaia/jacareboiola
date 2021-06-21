@@ -1,0 +1,49 @@
+/*--========== KEYFRAMES ==========*/
+@keyframes picada{
+    0%, 100%{
+        transform: rotate(0deg);
+    }
+
+    32%{
+        transform: rotate(-45deg);
+    }
+
+    67%{
+        transform: rotate(45deg);
+    }
+}
+
+/*--========== RESET ==========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--========== HTML/BODY ==========*/
+html,body{
+    background-image: url(../img/fundo-site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*--========== CONTAINER ==========*/
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*--========== PICARETA ==========*/
+.picareta{
+    width: 230px;
+    height: 250px;
+    position: relative;
+    top: 295px;
+    left: 30px;
+    transform: rotate(20deg);
+}
+
+.picareta:active{
+    animation: picada 0.5s infinite;
+}
+
